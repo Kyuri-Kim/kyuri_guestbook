@@ -1,0 +1,183 @@
+/********** reset start **********/
+@charset "utf-8";
+
+/* element margin initialization */
+html, body,
+div, span,
+dl, dt, dd, ul, ol, li,
+h1, h2, h3, h4, h5, h6,
+blockquote, p, address, pre, cite,
+form, fieldset, input, textarea, select,
+table, th, td {margin:0; padding:0;}
+
+/* title element */
+h1, h2, h3, h4, h5, h6 {
+ font-size: 100%;
+ font-weight: normal;
+}
+
+/* border removal */
+fieldset,
+img,
+abbr,
+acronym {
+ border: 0 none;
+}
+
+/* list */
+ol,
+ul {
+ list-style: none;
+}
+
+table {
+ border-collapse: collapse;
+ border-spacing: 0;
+ border: 0 none;
+}
+caption,
+th,
+td {
+ font-weight: normal;
+ border: 0;
+}
+
+/* text element initialization */
+address,
+caption,
+em,
+cite {
+ font-weight: normal;
+ font-style: normal;
+}
+ins {
+ text-decoration: none;
+}
+del {
+ text-decoration: line-through;
+}
+
+/* quotation */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+ content:"";
+}
+blockquote,
+q {
+ quotes:"" "";
+}
+
+/* horizontal line */
+hr {
+ display: none;
+}
+/********** reset end **********/
+
+/********** base start **********/
+/* body style */
+body {
+ color: #737373;
+ font-size: 12px;
+ line-height: 16px;
+ font-family: Dotum, Gulim, "돋움", "굴림", Arial, Verdana, sans-serif, AppleGothic;
+}
+
+/* base table style */
+table {
+ border-collapse: collapse; /* 셀간 테두리 분리시 separate로 바꿔줌 */
+ border-spacing: 0 !important;
+}
+caption {
+ text-align: left;
+ padding: 0 0 6px 21px;
+ color: #737373;
+ font-weight: bold;
+}
+th {
+ border: 1px solid #e3e3e3;
+ background-color: #f5f5f5;
+ height: 30px;
+ line-height: 30px;
+ vertical-align: middle;
+ padding: 0 10px;
+ color: #737373;
+ font-weight: bold;
+ white-space: nowrap; /* 줄바꿈 금지 */
+ /* 강제로 줄바꿈(특수문자제외) word-break: break-all; */
+ /* 강제로 줄바꿈(특수문자포함) word-wrap:break-word; */
+}
+td {
+ border: 1px solid #e3e3e3;
+ /* background-color: #fff; */
+ text-align: left;
+ color: #737373;
+ padding: 7px 10px 7px 10px;
+ white-space: normal; /* 줄바꿈 금지 */
+}
+td img,
+td input,
+td select,
+td textarea {
+ vertical-align: middle !important;
+}
+table a,
+table a:link,
+table a:visited {
+ color: #ff8a00;
+ text-decoration: none;
+}
+table a:hover,
+table a:active,
+table a:focus {
+ color: #ff5409;
+ text-decoration: underline;
+}
+
+/* form */
+input[type='text'],input[type='password'],input[type='search'] {
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 12px;
+ height: 18px;
+ line-height: 18px;
+ border: 1px solid #d7d7d7;
+ color: #666666;
+ padding: 0 5px;
+ vertical-align: middle;
+ width: 100%;
+}
+input[type="file"] {
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 12px;
+ height: 18px;
+ line-height: 18px;
+ border: 1px solid #d7d7d7;
+ color: #666666;
+ padding: 0;
+ margin: 0;
+ vertical-align: middle;
+}
+select {
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 12px;
+ height: 23px;
+ line-height: 23px;
+ border: 1px solid #d7d7d7;
+ color: #666666;
+ vertical-align: middle;
+ width: 100%;
+}
+textarea {
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 12px;
+ border: 1px solid #d7d7d7;
+ color: #666666;
+ padding: 0 5px;
+ overflow-y: auto;
+}
+label, select, input, textarea {
+ vertical-align:middle;
+}
+
+/********** base end **********/
