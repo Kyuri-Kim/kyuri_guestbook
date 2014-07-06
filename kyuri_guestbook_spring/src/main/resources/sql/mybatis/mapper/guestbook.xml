@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kyuri.kyuri_guestbook.mapper">
+
+	<select id="selectAllList" resultType="com.kyuri.kyuri_guestbook.domain.Guestbook">
+		SELECT
+		*
+		FROM
+		guestbook
+		order by write_time desc
+	</select>
+</mapper>
